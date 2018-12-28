@@ -56,7 +56,7 @@ For your convenience, DoD included the [`tplink_smarthome_api`](https://github.c
 
 ## Deployment
 
-The easiest way to deploy DOD is to use the Docker image.
+The easiest way to deploy DOD is to use the [Docker image](https://hub.docker.com/r/cmer/do-or-die).
 
 ## Requirements
 

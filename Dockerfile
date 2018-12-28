@@ -4,6 +4,7 @@ LABEL maintainer="Carl Mercier <foss@carlmercier.com>"
 ENV CONFIG="config.yml"
 
 WORKDIR /app
+VOLUME /config
 
 COPY ["docker-files/run.sh", "/usr/local/bin/"]
 
