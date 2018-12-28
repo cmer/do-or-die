@@ -16,6 +16,10 @@ For example, it can be used to monitor a host and reboot it remotely if it crash
 
 See `config.yml.example` for a sample configuration file.
 
+Commands can be either a path to an executable shell script or program (ie: `~/bin/myscript.sh`), or pure Ruby code (ie: `File.exists?('/tmp/foobar.txt')`).
+
+Shell commands are automatically detected if they start with a `/`, `~`, or `.`, such as: `/bin/ls`, `~/bin/script` or `./foobar.sh`.
+
 ## CLI Parameters
 
 See Help:
