@@ -1,0 +1,11 @@
+---
+interval: 60
+checks:
+  - name: Check Home Automation Server
+    check: http_ok?('http://homeseer.lan')
+    on_failure: "TplinkSmarthomeApi.new('10.0.0.243').reboot"
+
+  - name: Check for rain
+    check: ~/is_it_raining.sh
+    on_success: ~/open_umbrella.sh
+    on_failure: ~/close_umbrella.sh

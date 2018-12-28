@@ -1,0 +1,19 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    byebug (10.0.2)
+    net-ping (2.0.5)
+    slop (4.6.2)
+    tplink_smarthome_api (0.2.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  byebug
+  net-ping
+  slop
+  tplink_smarthome_api
+
+BUNDLED WITH
+   1.16.4
