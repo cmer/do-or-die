@@ -61,6 +61,6 @@ The easiest way to deploy DOD is to use the Docker image.
 ## Requirements
 
 * Ruby 2.5+
-* Node.js & `tplink-smarthome-api` package (only if you plan on using TP-Link SmartHome commands)
+* Node.js & [`tplink-smarthome-api`](https://www.npmjs.com/package/tplink-smarthome-api) package (only if you plan on using TP-Link SmartHome commands)
 
 
