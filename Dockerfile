@@ -1,4 +1,4 @@
-FROM ruby:2.5.2-alpine3.7
+FROM ruby:2.6-alpine3.8
 LABEL maintainer="Carl Mercier <foss@carlmercier.com>"
 
 ENV CONFIG="config.yml"
