@@ -38,6 +38,7 @@ loop do
   config = YAML.load_file(File.expand_path(opts[:config]))
   config['checks'].each do |c|
     puts "[#{Time.now}] Running '#{check_name(c)}'"
+    STDOUT.flush
 
     if run_command!(c['check'])
       log_and_run!("[#{Time.now}] * SUCCESS", c['on_success'])
@@ -48,5 +49,6 @@ loop do
 
   interval = config['interval'] || 60
   puts "[#{Time.now}] Sleeping for #{interval} seconds..."
+  STDOUT.flush
   sleep interval
 end
